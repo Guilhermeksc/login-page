@@ -1,59 +1,76 @@
-# LoginPage
+[TYPESCRIPT__BADGE]: https://img.shields.io/badge/typescript-D4FAFF?style=for-the-badge&logo=typescript
+[ANGULAR__BADGE]: https://img.shields.io/badge/Angular-red?style=for-the-badge&logo=angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
+<h1 align="center" style="font-weight: bold;">Login Page example in Angular 💻</h1>
 
-## Development server
+![angular][ANGULAR__BADGE]
+![typescript][TYPESCRIPT__BADGE]
 
-To start a local development server, run:
+<p align="center">
+ <a href="#about">About</a> • 
+ <a href="#started">Getting Started</a> • 
+  <a href="#started">App Routes</a> • 
+  <a href="#colab">Collaborators</a> •
+ <a href="#contribute">Contribute</a>
+</p>
 
-```bash
-ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+<p align="center">
+    <img src="./.github/login.png" alt="Image Example" width="400px">
+</p>
 
-## Code scaffolding
+<h2 id="started">📌 About</h2>
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+This project is a simple Login and Sign Up app developed during [my youtube video](https://youtu.be/6qbuuPM_de4) to demonstrate how to create  Angular apps with authentication and integrate with backend.
 
-```bash
-ng generate component component-name
-```
+<h2 id="started">🚀 Getting started</h2>
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Here you describe how to run your project locally
 
-```bash
-ng generate --help
-```
+<h3>Prerequisites</h3>
 
-## Building
+Here you list all prerequisites necessary for running your project. For example:
 
-To build the project run:
+- [NodeJS](https://github.com/)
+- [Git 2](https://github.com)
+- [Angular CLI](https://angular.io/cli)
 
-```bash
-ng build
-```
+<h3>Cloning</h3>
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+How to clone your project
 
 ```bash
-ng e2e
+git clone https://github.com/Fernanda-Kipper/login-page.git
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+<h3>Starting</h3>
 
-## Additional Resources
+How to start your project
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```bash
+cd project-name
+npm run start
+```
+
+<h2 id="routes">📍 Application Routes</h2>
+
+Here you can list the main routes of your API, and what are their expected request bodies.
+​
+| route               | description                                          
+|----------------------|-----------------------------------------------------
+| <kbd>/signup</kbd>     | Page to sign up
+| <kbd>/login</kbd>     | Page to login
+| <kbd>/user</kbd>     | Protected page that only logged in users can access
+
+<h2 id="contribute">📫 Contribute</h2>
+
+1. `git clone https://github.com/Fernanda-Kipper/text-editor.git`
+2. `git checkout -b feature/NAME`
+3. Follow commit patterns
+4. Open a Pull Request explaining the problem solved or feature made, if exists, append screenshot of visual modifications and wait for the review!
+
+<h3>Documentations that might help</h3>
+
+[📝 How to create a Pull Request](https://www.atlassian.com/br/git/tutorials/making-a-pull-request)
+
+[💾 Commit pattern](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)

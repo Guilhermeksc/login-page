@@ -1,7 +1,7 @@
-@use 'variables' as vars;
+@use 'variables' as var;
 
 .input-wrapper {
-    color: vars.$text-color;
+    color: var.$text-color;
     font-size: 16px;
     text-align: start;
 
@@ -16,7 +16,7 @@
         
         .icon {
             padding: 12px;
-            background-color: vars.$primary-color;
+            background-color: var.$primary-color;
             border-radius: 0 8px 8px 0;
 
             img {
@@ -27,7 +27,7 @@
         input {
             border: none;
             border-radius: 8px 0 0 8px;
-            background-color: vars.$gray-bg;
+            background-color: var.$gray-secondary-bg;
             padding: 12px 0 12px 20px;
             width: 100%;
         }
