@@ -1,2 +1,11 @@
 <!-- login.component.html -->
-<app-login-layout></app-login-layout>
+<app-login-layout
+    title="Login"
+    primaryBtnText="Login"
+    secondaryBtnText="Registre-se"
+>
+    <form [formGroup]="loginForm">
+        <input type="text" placeholder="E-mail" />
+        <input type="password" placeholder="Senha" />
+    </form>
+</app-login-layout>
