@@ -1,0 +1,30 @@
+<div class="main-container">
+  <app-layout-mini-sidebar></app-layout-mini-sidebar>
+  <app-layout-sidebar (sectionChange)="setSection($event)"></app-layout-sidebar>
+  <div class="content">    
+    <ng-container *ngIf="activeSection === 'calendar'">
+      <app-calendar></app-calendar>
+    </ng-container>
+    <ng-container *ngIf="activeSection === 'chat'">
+      <app-chat></app-chat>
+    </ng-container>    
+    <ng-container *ngIf="activeSection === 'dash'">
+      <app-dash></app-dash>
+    </ng-container>
+    <ng-container *ngIf="activeSection === 'scrum-view'">
+      <app-scrum-view></app-scrum-view>
+    </ng-container>
+    <ng-container *ngIf="activeSection === 'pgc'">
+      <app-pgc></app-pgc>
+    </ng-container>
+    <ng-container *ngIf="activeSection === 'analise'">
+      <app-analise></app-analise>
+    </ng-container>
+    <ng-container *ngIf="activeSection === 'apresentacao'">
+      <app-apresentacao></app-apresentacao>
+    </ng-container>
+    <ng-container *ngIf="activeSection === 'prazos'">
+      <app-prazos></app-prazos>
+    </ng-container>
+  </div>
+</div>

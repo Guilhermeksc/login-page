@@ -1,0 +1,63 @@
+<div class="dashboard">
+    <div class="dashboard-header">
+      <h1>Dashboard de Licitações</h1>
+    </div>
+  
+    <div class="dashboard-overview">
+      <div class="card">
+        <h2>Contratos</h2>
+        <p>{{ totalContratos }}</p>
+      </div>
+      <div class="card">
+        <h2>Atas</h2>
+        <p>{{ totalAtas }}</p>
+      </div>
+    </div>
+  
+    <div class="dashboard-status">
+      <h2>Status por Pregão Eletrônico</h2>
+      <ul>
+        <li *ngFor="let item of statusPregao">
+          {{ item.status }}: {{ item.quantidade }}
+        </li>
+      </ul>
+    </div>
+  
+    <div class="dashboard-prazo">
+      <h2>Prazos de Vigência</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Contrato</th>
+            <th>Dias Restantes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let prazo of prazoVigencia">
+            <td>{{ prazo.contrato }}</td>
+            <td>{{ prazo.diasRestantes }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <div class="dashboard-sessoes">
+        <h2>Sessões Públicas Ocorrendo</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Pregão</th>
+              <th>Horário</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let sessao of sessoesPublicas">
+              <td>{{ sessao.pregao }}</td>
+              <td>{{ sessao.horario }}</td>
+              <td>{{ sessao.data }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  

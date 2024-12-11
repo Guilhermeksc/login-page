@@ -1,0 +1,61 @@
+.contact-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+  
+    .section-title {
+      font-size: 2rem;
+      text-align: center;
+      color: #343a40;
+      margin-bottom: 1rem;
+    }
+  
+    .section-description {
+      font-size: 1.2rem;
+      text-align: center;
+      color: #6c757d;
+      margin-bottom: 2rem;
+    }
+  
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+  
+      .form-control {
+        width: 100%;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+      }
+  
+      .btn-primary {
+        display: block;
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+        background-color: #007bff;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  
+    .developer-info {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 1rem;
+      color: #495057;
+  
+      strong {
+        color: #007bff;
+      }
+    }
+  }
+  

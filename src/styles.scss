@@ -1,12 +1,25 @@
-@use 'ngx-toastr/toastr';
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-
-html, body {
-    height: 100%;
-}
+.content-container {
+    padding: 1.5rem;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .content-header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #1F1F1F;
+  }
+  
+  .content-body {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .content-section {
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+  }
+  

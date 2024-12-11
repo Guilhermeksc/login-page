@@ -1,0 +1,29 @@
+<div class="content-container">
+  <div class="content-header">Fluxo de Trabalho</div>
+  <div class="content-body">
+    <button (click)="generateReport()">Gerar Relatório</button>
+  <div class="content-body">
+    <div class="scrum-board">
+      <div *ngFor="let board of boards" class="board">
+        <div class="board-header" (click)="toggleBoard(board)">
+          <h3>{{ board.name }}</h3>
+          <button class="toggle-btn">{{ board.opened ? '-' : '+' }}</button>
+        </div>
+        <div class="tasks" *ngIf="board.opened">
+          <div *ngFor="let task of board.tasks" class="task">
+            <div class="task-content">
+              <span class="task-user">PE {{ task.userId }}</span>
+              <p>{{ task.description }}</p>
+            </div>
+            <div class="task-labels">
+              <span *ngIf="task.important === true" class="label important">Emenda Parlamentar</span>
+              <span *ngIf="task.bug === true" class="label bug">Prioritário</span>
+            </div>
+          </div>          
+        </div>        
+      </div>
+    </div>
+    <!-- Botão para gerar relatório -->
+
+
+

@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   standalone: true,
   selector: 'app-root',
-  imports: [RouterModule],
-  template: '<router-outlet></router-outlet>'
+  template: `<router-outlet></router-outlet>`, // Renderiza as rotas
+  imports: [RouterOutlet]
 })
 export class AppComponent {}

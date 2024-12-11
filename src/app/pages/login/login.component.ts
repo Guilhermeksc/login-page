@@ -13,6 +13,7 @@ interface LoginForm {
 
 @Component({
     selector: 'app-login',
+    standalone: true,
     imports: [
         DefaultLoginLayoutComponent,
         ReactiveFormsModule,
@@ -25,24 +26,31 @@ interface LoginForm {
     styleUrl: './login.component.scss'
 })
 export class LoginComponent {
-  loginForm!: FormGroup<LoginForm>;
+  loginForm: FormGroup;
 
   constructor(
     private router: Router,
     private loginService: LoginService,
     private toastService: ToastrService
-  ){
+  ) {
     this.loginForm = new FormGroup({
       email: new FormControl('', [Validators.required, Validators.email]),
       password: new FormControl('', [Validators.required, Validators.minLength(6)])
-    })
+    });
   }
 
-  submit(){
-    this.loginService.login(this.loginForm.value.email, this.loginForm.value.password).subscribe({
-      next: () => this.toastService.success("Login feito com sucesso!"),
-      error: () => this.toastService.error("Erro inesperado! Tente novamente mais tarde")
-    })
+  submit() {
+    console.log("Form enviado:", this.loginForm.value);
+    this.loginService.login(this.loginForm.value).subscribe({
+      next: () => {
+        this.toastService.success("Login feito com sucesso!");
+        this.router.navigate(['/home']); // Redireciona para home
+      },
+      error: (err) => {
+        console.error("Erro ao fazer login:", err);
+        this.toastService.error("Erro inesperado! Tente novamente mais tarde.");
+      }
+    });
   }
 
   navigate(){
