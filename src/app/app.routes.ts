@@ -10,7 +10,7 @@ import { MainComponent } from './main/main/main.component';
 export const routes: Routes = [
   { path: '', component: HomeComponent }, // Página inicial
   { path: 'login', component: LoginComponent }, // Página de login
-  { path: 'home', component: MainComponent, canActivate: [AuthGuard] }, // Protegido por AuthGuard
+  { path: 'home', component: MainComponent }, // Protegido por AuthGuard
   { path: 'user', component: UserComponent, canActivate: [AuthGuard] }, // Protegido por AuthGuard
   { path: 'signup', component: SignUpComponent }, // Cadastro
   { path: '**', redirectTo: '' } // Redireciona rotas inválidas

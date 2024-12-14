@@ -1,0 +1,34 @@
+<div class="content-container-contract-dialog">
+  <h1 mat-dialog-title>Editar Contrato</h1>
+  <div mat-dialog-content class="edit-contract-dialog">
+    <form>
+      <mat-form-field>
+      <mat-label>Nº do Contrato</mat-label>
+      <input matInput [(ngModel)]="contract.numeroContrato" name="numeroContrato" disabled>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Dias Para Vencer</mat-label>
+      <input matInput [(ngModel)]="contract.diasParaVencer" name="diasParaVencer">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Objeto</mat-label>
+      <input matInput [(ngModel)]="contract.objeto" name="objeto">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Empresa</mat-label>
+      <input matInput [(ngModel)]="contract.empresa" name="empresa">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Tipo</mat-label>
+      <input matInput [(ngModel)]="contract.tipo" name="tipo">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Comentários</mat-label>
+      <textarea matInput [(ngModel)]="contract.comentarios" name="comentarios"></textarea>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancelar</button>
+  <button mat-button (click)="onSave()">Salvar</button>
+</div>

@@ -11,8 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class ChatComponent {
   messages = [
-    { sender: 'Alice', content: 'Olá, como posso ajudar?', timestamp: '10:30 AM' },
-    { sender: 'Você', content: 'Gostaria de saber mais sobre o projeto.', timestamp: '10:31 AM' },
+    { sender: 'Robot', content: 'Olá, como posso ajudar?', timestamp: '10:30 AM' },
   ];
   
   newMessage: string = '';

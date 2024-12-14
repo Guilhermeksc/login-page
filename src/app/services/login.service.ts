@@ -5,10 +5,10 @@ import { tap } from 'rxjs';
 import { Observable } from 'rxjs';
 import { HttpHeaders } from '@angular/common/http';
 import { environment } from '../../environments/environment';
-
 @Injectable({
   providedIn: 'root'
 })
+
 export class LoginService {
   apiUrl: string = environment.apiUrl;
 

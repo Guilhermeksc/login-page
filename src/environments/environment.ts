@@ -1,5 +1,6 @@
 export const environment = {
     production: true,
-    apiUrl: 'http://localhost:8000/api/auth'
+    apiUrl: 'https://licitacao360.com/api/auth'
   };
+
   

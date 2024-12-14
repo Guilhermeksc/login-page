@@ -10,6 +10,8 @@ import { CalendarComponent } from '../content/dashboard/calendar/calendar.compon
 import { ChatComponent } from '../content/dashboard/chat/chat.component';
 import { DashComponent } from '../content/dashboard/dash/dash.component';
 import { PrazosComponent } from '../content/modules/prazos/prazos.component';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 @Component({
   standalone: true,
@@ -18,6 +20,7 @@ import { PrazosComponent } from '../content/modules/prazos/prazos.component';
   styleUrls: ['./main.component.scss'],
   imports: [
     CommonModule,
+    MatDialogModule,
     LayoutMiniSidebarComponent,
     LayoutSidebarComponent,
     ScrumViewComponent,
@@ -27,7 +30,7 @@ import { PrazosComponent } from '../content/modules/prazos/prazos.component';
     CalendarComponent,
     ChatComponent,
     DashComponent,
-    PrazosComponent
+    PrazosComponent,
   ],
 })
 export class MainComponent {
